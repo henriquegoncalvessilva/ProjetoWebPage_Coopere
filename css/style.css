@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@400;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root{
+    --light--green--menu:#7CB342;
+    --light--blue:#49C0D8;
+    --light-green--button--donatenow:#97D722;
+    --text-gray:#6D565C;
+    --gray-footer:#69757F;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+p,span{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 1rem;
+line-height: 14px;
+letter-spacing: 0.577778px;
+color: #6D565C;
+}
+
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+header nav{
+    z-index: 9999;
+}
+
+header #menu{
+    display: flex;
+    align-items: center;
+    height: 66px;
+    background: white;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+}
+
+header #menu ul{
+
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 720px;
+    height: 29px;
+
+}
+
+header #menu li{
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+header #menu li a{
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #313131;
+}
+
+header #menu li .active{
+    color: var(--light--green--menu);
+}
+
+
+header #logo img{
+    width: 220px;
+    
+}
+
+.main-info{
+    display: flex;
+    width: 100%;
+    height: 865px;
+    margin: 0 auto;
+    position: relative;
+
+
+}
+
+.main-info .image-slide-container{
+    max-width: 1440px;
+    height: 865px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main-info .image-slide-container img{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+section .description{
+    max-width: 1280px;
+    position: absolute;
+    top: 50%;
+    margin-left: 2rem;
+    
+}
+
+section .description h2{
+    font-size: 34px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    
+}
+
+
+.btn-description{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 16px 8px;
+    border-radius: 10px;
+    background: var(--light--blue);
+    border: 0px;
+    padding: 0 20px;
+    height: 58px;
+}
+
+.primary-campanhas{
+    margin: 0 auto;
+    max-width:1260px;
+    
+}
+
+.primary-campanhas h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--light--blue);
+}
+
+.slide-campanhas{
+    background-color: #efebeb77;
+    border-radius: 10px;
+}
+
+.secundary-campanhas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+
+}
+
+.secundary-campanhas .other-campanhas{
+    
+    
+    background: rgba(239,235,235,0.50);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.other-campanhas .other-campanha-info{
+    width: inherit;
+    height: 160px;
+}
+
+.progress-bar{
+    
+    border-radius: 5px;
+    height: 24px;
+    width: 400px;
+    margin: 16px 0;
+    overflow: hidden;
+    background: #C4C4C4;
+    ;
+}
+
+.progress-bar .progress{
+    background-color: var(--light-green--button--donatenow);
+    height: inherit;
+    --progress-width:51%;
+    width: var(--progress-width);
+    display: inline-block;
+    padding: 2px;
+}
+
+.progress-bar .progress-porcent{
+
+    color: white;
+    
+    margin: 10px var(--progress-width);
+    
+    
+}
+
+
+.other-campanhas .donate-now{
+    background-color: var(--light-green--button--donatenow);
+    color: white;
+    border: 0;
+    padding: 0 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 63px;
+    width: 100%;
+    line-height: auto;
+    letter-spacing: 0.6px;
+    
+
+}
+
+
+
+.map{
+
+    width: 100%;
+    height: 865px;
+    margin:2rem auto;
+    background: url("../assets/mapa.png") no-repeat;
+    background-size:cover;
+
+
+
+}
+
+
+.map .layer{
+    background: rgba(84, 84, 84, 0.75);    
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.map h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 42px auto;
+}
+
+.map .layer button{
+    
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 10px;
+    background: var(--light--blue);
+    border: 0px;
+    height: 58px;
+
+
+}
+
+.main-events{
+
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.main-events h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--light--blue);
+    
+}
+
+.main-events .container-events{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: auto;
+    width: 100%;
+
+}
+
+.main-events .container-events .info-event{
+    width: 300px;
+    height: inherit;
+    text-align: center;
+    padding: 1rem;
+}
+
+.info-event p{
+    color: var(--text-gray);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.6px;
+}
+
+.info-event p,button{
+    margin: 1rem 0;
+}
+
+
+
+.info-event button{
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px 8px;
+    border-radius: 10px;
+    background: var(--light--blue);
+    border: 0px;
+    padding: 0 8px;
+    height: 58px;
+    width: 180px;
+    letter-spacing: 0.6px;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+.contact{
+    
+    
+    background-color: var(--light--blue);
+    margin: 60px auto 0 auto;
+        
+    
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.contact-info{
+ 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+    display: flex;
+    gap: 10px;
+}
+
+.contact-info p{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 1rem;
+line-height: 1.25rem;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+footer{
+    background-color: var(--gray-footer);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+footer p{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: lighter;
+font-size: 17px;
+line-height: 20px;
+text-align: center;
+padding: 0 1rem;
+color: #FFFFFF;
+}
+
+#menu #menu-mobile{
+    display: none;
+}
+
+#menu #menu-mobile-container{
+
+    display: none;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+#menu #menu-mobile-container ul{
+
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin:0;
+
+
+
+}
+
+#menu #menu-mobile-container ul li{
+
+    padding: 1rem;
+}
+
+#menu #menu-mobile-container ul li:hover{
+    color: var(--light--green--menu);
+}
+
+#menu #menu-mobile-container ul #btn-close{
+    margin: 0 2rem 0 auto;
+
+}
+
+
+
+@media (max-width: 1280px) {
+    .secundary-campanhas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 2rem auto;
+        justify-items: center;
+    }
+
+    .main-info{
+        height: unset;
+    }
+    
+    .main-info .image-slide-container{
+        height: unset;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    header #menu ul{
+        display: none;
+    }
+   
+    #menu #menu-mobile{
+        display: initial;
+        
+    }
+
+    #menu #menu-mobile svg{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    section .description{
+        
+        top: 25%;
+        
+    }
+
+
+
+    .main-events .container-events{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .secundary-campanhas{
+       
+        grid-template-columns: auto;
+       
+    }
+
+    .main-info{
+        height: unset;
+    }
+
+    .main-info .image-slide-container{
+        height: unset;
+    }
+
+}
+
+@media (max-width: 780px) {
+
+    header #menu{
+        padding: 2rem 0;
+        height: auto;
+    }
+
+
+
+   header #menu ul{
+       
+        display: none;
+       
+    }
+
+    .main-events .container-events {
+        grid-template-columns: 1fr;
+    }
+    
+    .primary-campanhas{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    section .description{
+        
+        top: 18%;
+        
+    }
+
+    .secundary-campanhas .other-campanhas{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        background: #EFEBEB;
+        height: auto;
+    }
+
+    .secundary-campanhas .other-campanhas img, .progress-bar{
+        
+        width: 297px;
+    
+    }
+
+    .secundary-campanhas .other-campanhas img, .progress-bar, p, span,h3{
+
+        margin: 1rem auto;
+
+    }
+
+    .other-campanhas .donate-now{
+        width: 75%;
+        position: initial;
+    }
+
+   
+}
+
+@media (max-width: 600px) {
+    
+    .primary-campanhas h1{
+        font-size: 2rem;
+    }
+
+    section .description{
+
+    margin-left: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    height: auto;
+    
+
+    }
+
+    section .description button{
+        color: white;
+        font-size: 0.85rem;
+        font-weight: bold;
+        padding: 16px 8px;
+        border-radius: 10px;
+        background: var(--light--blue);
+        border: 0px;
+        padding: 0 20px;
+        height: 2rem;
+        width: 57%;
+    }
+
+    section .description h2{
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: left;
+        color: white;
+        word-break: break-all;
+    }
+
+    .info-event p, button{
+        margin: 1rem 0;
+    }
+
+    .info-event button{
+        font-size: 1rem;
+    }
+    
+    .map h1{
+        font-size: 2rem;
+    }
+
+    .map .layer button{
+        width: 75%;
+        font-size: 0.85rem;
+        padding: 0;
+    }
+
+    .main-events h1{
+        font-size: 2rem;
+    }
+}
+
+
+
