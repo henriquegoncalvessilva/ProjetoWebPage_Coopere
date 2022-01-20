@@ -192,17 +192,16 @@ section .description h2{
 .progress-bar .progress{
     background-color: var(--light-green--button--donatenow);
     height: inherit;
-    --progress-width:51%;
-    width: var(--progress-width);
+    width: unset;
     display: inline-block;
     padding: 2px;
+    text-align: center;
 }
 
 .progress-bar .progress-porcent{
 
     color: white;
     
-    margin: 10px var(--progress-width);
     
     
 }
