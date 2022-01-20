@@ -570,7 +570,7 @@ color: #FFFFFF;
    
 }
 
-@media (max-width: 660px) {
+@media (max-width: 720px) {
     
     .primary-campanhas h1{
         font-size: 2rem;
